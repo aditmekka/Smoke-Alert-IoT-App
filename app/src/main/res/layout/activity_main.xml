@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Text for Plant A Soil Humidity -->
+
+    <!-- Horizontal Progress Bar for Plant A -->
+
+    <TextView
+        android:id="@+id/deviceStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Device is: ON"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textSensorVal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deviceStatus"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor A: 0%"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSensor1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSensorVal1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/textSensorVal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarSensor1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor B: 0%"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSensor2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSensorVal2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/textSensorVal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBarSensor2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor C: 0%"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSensor3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSensorVal3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/textSensorVal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarSensor3"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor D: 0%"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSensor4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSensorVal4"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:max="100" />
+
+    <!-- Text for Plant B Soil Humidity -->
+
+    <!-- Horizontal Progress Bar for Plant B -->
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderSmokeThreshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSmokeThreshold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:value="0"
+        android:valueFrom="0"
+        android:valueTo="100" />
+
+    <Switch
+        android:id="@+id/switchBuzzerTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sliderSmokeThreshold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Buzzer Test" />
+
+    <TextView
+        android:id="@+id/textSmokeThreshold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBarSensor4"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Smoke Threshold: 0%"
+        android:textSize="18sp" />
+</RelativeLayout>
